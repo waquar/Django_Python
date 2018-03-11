@@ -1,0 +1,37 @@
+
+{% extends 'layout.html' %}
+
+{% block content %}
+
+
+{% comment %}
+
+{% include 'hellosecond.html' %}                                            inheriting another html
+-------------------------------------------------------------------------------------------------------
+its comment in templates
+                                                                    using if
+{% if name == 'xyz' %}
+<h2> Name: {{ name }} </h2>
+{% else %}
+<h2> i ama in else block man!!</h2>
+{% endif %}
+                                                                    using forloop
+{% for i in listdata %}
+<h2> {{ i }} </h2>
+{% endfor %}
+
+{{ listdata.0 }}         accessing dictionary indexing
+
+                                                                     using dictionary
+{% for k,v in dict.items %}
+<h2>  {{ k }}: {{v}} </h2>
+{% endfor %}
+-------------------------------------------------------------------------------------------------------------
+
+{% endcomment %}
+{% block title %}hellodjango{% endblock %}
+<h2> i am the new hero here!!!</h2>
+
+
+{% endblock %}
+

@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% load crispy_forms_tags %}
+
+
+{% block title %} from sites {% endblock %}
+
+{% block content %}
+
+{% if msg %}
+<h3>{{  msg }}</h3>
+{% endif %}
+
+<form action="" method="post" novalidate> {% csrf_token %}
+
+    {{ form | crispy }}
+
+    <input type = 'submit' value=" Login" class=" btn btn-warning btn-sm">
+
+</form>
+
+{% endblock %}

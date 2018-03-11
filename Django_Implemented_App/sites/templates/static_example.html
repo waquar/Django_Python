@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link href="{% static 'css/new.css'  %}" type='text/css' rel='stylesheet'>
+
+    <!--for js script in assets management-->
+    <script type="text/javascript" src="{% static 'js/new.js' %}"></script>
+    <style>
+        .demo{
+            color: purple;
+        }
+    </style>
+
+    <style>
+        .demo{
+            color: purple;
+        }
+    </style>
+
+</head>
+<body>
+
+
+<video width="400" height="500" controls>
+  <source src="{% static 'videos/YouTube.MP4' %}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<!--<button onclick="clickalert()"> Click Me </button>-->
+<!--<button onclick="clickalertagain()"> Click here waquar </button>-->
+
+<!--<h1 class="test">External CSS</h1>-->
+<!--<h1 class="demo">Internal CSS</h1>-->
+<!--<h1 style='color: blue'>Inline CSS</h1>-->
+
+<img src="{% static 'images/20180221_234111.jpg' %}" height="400" width="300">
+
+</body>
+</html>

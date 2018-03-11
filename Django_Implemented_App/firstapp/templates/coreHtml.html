@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block title %} Hello {% endblock %}
+{% block content %}
+
+<form action="" method="post" novalidate>
+    {% csrf_token %}
+<div class=" form-group">
+    <label for="name">Name:</label>
+    <input type="text" class=" form-control" id="name" placeholder="Enter name" name="name">
+           {{form.name.errors}}
+    </div>
+    <div class="form-group">
+        <label for="email"> Email:</label>
+        <input type="email" class="form-control" id="pwd" placeholder="Enter Password" name=" email">
+        {{form.email.errors}}
+    </div>
+    <button type="submit" class="btn-btn-default">Submit</button>
+</form>
+
+{% endblock %}

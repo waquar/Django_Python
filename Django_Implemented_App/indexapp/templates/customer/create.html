@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% load crispy_forms_tags %}
+
+
+{% block title %} Create_Bank {% endblock %}
+
+{% block content %}
+
+<form action="" method="post" novalidate> {% csrf_token %}
+
+    {{ form | crispy }}
+
+    <input type = 'submit' value=" Submit" class=" btn btn-primary">
+
+</form>
+
+{% endblock %}
